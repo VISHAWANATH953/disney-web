@@ -1,0 +1,17 @@
+.slide{
+    margin-top: 15px;
+    width:96%;
+    .wrap{
+        border-radius: 14px;
+        transition:all 250ms ease 0s;
+        overflow: hidden;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        &:hover{
+            border: 2px solid #f9f9f9;
+        }
+    }
+}
