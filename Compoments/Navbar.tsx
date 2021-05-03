@@ -16,7 +16,7 @@ const Navbar = () => {
                 <li><Link href="/Main"><a><img src={prefix+"/images/series-icon.svg"} alt="series" /><span>SERIES</span></a></Link></li>
             </ul>
             <div className={styles.user}>
-                <img src={prefix+"https://htmlcolors.com/img/change-user.png"} alt="User" />
+                <img src="https://htmlcolors.com/img/change-user.png" alt="User" />
             </div>
         </nav>
     )

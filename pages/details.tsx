@@ -4,7 +4,7 @@ const details = () => {
     return (
         <div className={styles.details}>
             <div className={styles.img}>
-                <img src={prefix + "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78"} alt="bao" />
+                <img src={"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D7AEE1F05D10FC37C873176AAA26F777FC1B71E7A6563F36C6B1B497CAB1CEC2/scale?width=1440&aspectRatio=1.78"} alt="bao" />
             </div>
             <div className={styles.info}>
                 <div className={styles.btns}>
