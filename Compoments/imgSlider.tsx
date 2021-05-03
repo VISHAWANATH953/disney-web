@@ -2,6 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/compoments/imgslider.module.scss"
 import Slider from 'react-slick'
+const prefix: string = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const ImgSlider = () => {
     let settings = {
         dots: true,
@@ -14,16 +15,16 @@ const ImgSlider = () => {
     return (
         <Slider {...settings} className={styles.slide}>
             <div className={styles.wrap}>
-                <img src={'/images/slider-badag.jpg'} alt={"hay"} />
+                <img src={prefix+'/images/slider-badag.jpg'} alt={"hay"} />
             </div>
             <div className={styles.wrap}>
-                <img src={'/images/slider-badging.jpg'} alt={"hay"} />
+                <img src={prefix+'/images/slider-badging.jpg'} alt={"hay"} />
             </div>
             <div className={styles.wrap}>
-                <img src={'/images/slider-scale.jpg'} alt={"hay"} />
+                <img src={prefix+'/images/slider-scale.jpg'} alt={"hay"} />
             </div>
             <div className={styles.wrap}>
-                <img src={'/images/slider-scales.jpg'} alt={"hay"} />
+                <img src={prefix+'/images/slider-scales.jpg'} alt={"hay"} />
             </div>
         </Slider>
     )
