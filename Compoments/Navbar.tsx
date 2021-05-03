@@ -1,4 +1,5 @@
 import styles from "../styles/compoments/navbar.module.scss"
+
 const Navbar = () => {
     return (
         <nav className={styles.nav}>
@@ -6,15 +7,15 @@ const Navbar = () => {
                 <img src="/images/logo.svg" alt="Disney" />
             </header>
             <ul>
-                <li><span>HOME</span></li>
-                <li><span>SEARCH</span></li>
-                <li>+ <span>WATCHLIST</span></li>
-                <li><span>ORIGINALS</span></li>
-                <li><span>MOVIES</span></li>
-                <li><span>SERIES</span></li>
+                <li><img src="/images/home-icon.svg" alt="home" /><span>HOME</span></li>
+                <li><img src="/images/search-icon.svg" alt="search" /><span>SEARCH</span></li>
+                <li><img src="/images/watchlist-icon.svg" alt="plus" /> <span>WATCHLIST</span></li>
+                <li><img src="/images/original-icon.svg" alt="start" /><span>ORIGINALS</span></li>
+                <li><img src="/images/movie-icon.svg" alt="movies" /><span>MOVIES</span></li>
+                <li><img src="/images/series-icon.svg" alt="series" /><span>SERIES</span></li>
             </ul>
-            <div className="user">
-                <img src="" alt="User" />
+            <div className={styles.user}>
+                <img src="https://htmlcolors.com/img/change-user.png" alt="User" />
             </div>
         </nav>
     )

@@ -1,6 +1,10 @@
 .slide{
     margin-top: 15px;
     width:96%;
+    ul li button::before{
+        color:#f9f9f9;
+        font-size: 10px;
+    }
     .wrap{
         transition:all 250ms ease 0s;
         overflow: hidden;
