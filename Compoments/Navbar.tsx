@@ -1,5 +1,5 @@
 import styles from "../styles/compoments/navbar.module.scss"
-
+import Link from 'next/link'
 const Navbar = () => {
     return (
         <nav className={styles.nav}>
@@ -7,12 +7,12 @@ const Navbar = () => {
                 <img src="/images/logo.svg" alt="Disney" />
             </header>
             <ul>
-                <li><img src="/images/home-icon.svg" alt="home" /><span>HOME</span></li>
-                <li><img src="/images/search-icon.svg" alt="search" /><span>SEARCH</span></li>
-                <li><img src="/images/watchlist-icon.svg" alt="plus" /> <span>WATCHLIST</span></li>
-                <li><img src="/images/original-icon.svg" alt="start" /><span>ORIGINALS</span></li>
-                <li><img src="/images/movie-icon.svg" alt="movies" /><span>MOVIES</span></li>
-                <li><img src="/images/series-icon.svg" alt="series" /><span>SERIES</span></li>
+                <li><Link href="/Main"><a><img src="/images/home-icon.svg" alt="home" /><span>HOME</span></a></Link></li>
+                <li><Link href="/Main"><a><img src="/images/search-icon.svg" alt="search" /><span>SEARCH</span></a></Link></li>
+                <li><Link href="/Main"><a><img src="/images/watchlist-icon.svg" alt="plus" /> <span>WATCHLIST</span></a></Link></li>
+                <li><Link href="/Main"><a><img src="/images/original-icon.svg" alt="start" /><span>ORIGINALS</span></a></Link></li>
+                <li><Link href="/Main"><a><img src="/images/movie-icon.svg" alt="movies" /><span>MOVIES</span></a></Link></li>
+                <li><Link href="/Main"><a><img src="/images/series-icon.svg" alt="series" /><span>SERIES</span></a></Link></li>
             </ul>
             <div className={styles.user}>
                 <img src="https://htmlcolors.com/img/change-user.png" alt="User" />

@@ -1,0 +1,35 @@
+.index{
+    color: #fff;
+    text-align: center;
+    width: 100%; 
+    height:calc(100vh - 10vh);
+    display: grid;
+    place-items: center;
+    background:url('/images/login-background.jpg') center center no-repeat;
+    background-size: cover;
+    .content{
+        margin-bottom: 125px;
+        display: grid;
+        place-items: center;
+        grid-gap: 8px;
+        width: 50%;
+        img{
+            width: 100%;
+        }
+        a{
+            background: #0063e5;
+            font-size: 18px;
+            letter-spacing:.6px;
+            padding: 20px 40%;
+            border-radius: 5px;
+            transition: all 250ms ease 0s;
+            &:hover {
+                background: #0483ee;
+            }
+        }
+        p{
+            font-size: 12px;
+            letter-spacing:1px;
+        }
+    }
+}

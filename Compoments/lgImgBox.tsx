@@ -1,45 +1,21 @@
 import styles from "../styles/compoments/lgimgbox.module.scss"
+import movies from "../json/moviesData.json"
 const LgImgBox = () => {
-    return (
-        <div className={styles.lgbox}>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-disney.png" alt="disney" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-pixar.png" alt="pixar" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-marvel.png" alt="marvel" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-starwars.png" alt="starwars" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-national.png" alt="netgographi" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-disney.png" alt="disney" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-pixar.png" alt="pixar" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-marvel.png" alt="marvel" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-starwars.png" alt="starwars" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-national.png" alt="netgographi" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-marvel.png" alt="marvel" />
-            </div>
-            <div className={styles.lgimgbox}>
-                    <img src="/images/viewers-starwars.png" alt="starwars" />
-            </div>
-        </div>
-    )
+        const movie = Object.entries(movies.movies);
+        return (
+                <div className={styles.lgbox}>
+                        {
+                                movie.map((movie, i) => {
+                                        let hayData = movie[1].cardImg;
+                                        return (
+                                                <div className={styles.lgimgbox} key={i}>
+                                                        <img src={hayData} alt={"pixar"} />
+                                                </div>
+                                        )
+                                })
+                        }
+                </div>
+        )
 }
 
 export default LgImgBox
