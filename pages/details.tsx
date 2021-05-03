@@ -8,10 +8,10 @@ const details = () => {
             </div>
             <div className={styles.info}>
                 <div className={styles.btns}>
-                    <a className={styles.one}><img src="images/play-icon-black.png" alt="Group" />PLAY</a>
-                    <a className={styles.two}><img src="images/play-icon-white.png" alt="Group" />TRAILER</a>
+                    <a className={styles.one}><img src={prefix+"/images/play-icon-black.png"} alt="Group" />PLAY</a>
+                    <a className={styles.two}><img src={prefix+"/images/play-icon-white.png"} alt="Group" />TRAILER</a>
                     <a className={styles.smone}>+</a>
-                    <a className={styles.smtwo}> <img src="images/group-icon.png" alt="Group" /> </a>
+                    <a className={styles.smtwo}> <img src={prefix+"/images/group-icon.png"} alt="Group" /> </a>
                 </div>
                 <div className={styles.two}>
                     <p className={styles.sm}>2018 • 7m • Family, Fantasy, Kids, Animation</p>
