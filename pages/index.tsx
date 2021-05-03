@@ -3,6 +3,7 @@ const prefix: string = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const Home = () => {
   return (
     <div className={styles.index}>
+      <img className={styles.inimg} src={prefix+"/images/login-background.jpg"} alt="login background" />
       <div className={styles.content}>
         <img src={prefix+"/images/cta-logo-one.svg"} alt="disney hulu espn+" />
         <a href="/Main">GET ALL THERE</a>
