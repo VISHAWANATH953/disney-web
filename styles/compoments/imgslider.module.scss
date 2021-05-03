@@ -2,7 +2,6 @@
     margin-top: 15px;
     width:96%;
     .wrap{
-        border-radius: 14px;
         transition:all 250ms ease 0s;
         overflow: hidden;
         img{
@@ -11,7 +10,7 @@
             object-fit: cover;
         }
         &:hover{
-            border: 2px solid #f9f9f9;
+            border: 2.5px solid #f9f9f9;
         }
     }
 }
