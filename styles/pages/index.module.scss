@@ -19,28 +19,28 @@
         object-fit: fill;
     }
     .content{
-        margin-bottom: 125px;
+        margin-bottom: 12.5rem;
         display: grid;
         place-items: center;
-        grid-gap: 8px;
+        grid-gap: .8rem;
         width: 50%;
         img{
             width: 100%;
         }
         a{
             background: #0063e5;
-            font-size: 18px;
-            letter-spacing:.6px;
-            padding: 20px 40%;
-            border-radius: 5px;
+            font-size: 1.8rem;
+            letter-spacing:.06rem;
+            padding: 2rem 40%;
+            border-radius: .5rem;
             transition: all 250ms ease 0s;
             &:hover {
                 background: #0483ee;
             }
         }
         p{
-            font-size: 12px;
-            letter-spacing:1px;
+            font-size: .12rem;
+            letter-spacing:.1rem;
         }
     }
 }
