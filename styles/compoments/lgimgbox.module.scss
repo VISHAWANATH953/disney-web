@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-around;
     flex-flow: row wrap;
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     .lgimgbox{
         cursor: pointer;
@@ -25,5 +25,11 @@
                 border-radius: 1.4rem;
                 border-color:rgba(255, 255, 255, 0.897);
             }
+    }
+}
+@media screen and (max-width:768px){
+    .lgimgbox{
+        width: 22rem !important;
+        height:18rem !important;
     }
 }

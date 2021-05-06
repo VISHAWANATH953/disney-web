@@ -8,7 +8,19 @@
     align-items: flex-start;
     justify-content:space-evenly;
     flex-flow:column nowrap;
-    z-index: 1;
+    z-index: 2;
+    &::before{
+        content:'';
+        position:absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background:rgba(0,0,0,0.2);
+        z-index:0;
+    }
     .backImg{
         position:absolute;
         top: 0;
@@ -23,6 +35,7 @@
     .img{
         width: 45rem;
         height:25rem;
+        z-index: 2;
         img{
             width: 100%;
             height:100%;
@@ -30,6 +43,7 @@
         }
     }
     .info{
+        z-index: 2;
         padding-left: 1rem;
         .btns{
             width:35rem;
@@ -54,5 +68,11 @@
                 font-size: 1.9rem;
             }
         }
+    }
+}
+@media screen and (max-width:768px){
+    .details{
+        overflow: hidden;
+        padding: 0;
     }
 }

@@ -39,8 +39,19 @@
             }
         }
         p{
-            font-size: .12rem;
+            font-size: 1.5rem;
             letter-spacing:.1rem;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .index{
+        .content{
+            grid-gap:2rem;
+            width: 90%;
+            a{
+                padding:2rem 30%;
+            }
         }
     }
 }

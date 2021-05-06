@@ -19,7 +19,7 @@
         img{
             width:100%;
             height:100%;
-            object-fit: cover;
+            object-fit: fill;
             z-index: 1;
             position: absolute;
         }
@@ -40,4 +40,18 @@
     :hover{
        video{opacity: 1;}
     }
+}
+
+@media screen and (max-width:768px){
+    .smbox{
+        width: 98%;
+        height: 12vh;
+        margin-top: 2.5rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        .smimgbox{
+            width: 8.5rem;
+            height: 8.5rem;
+        }
+    } 
 }
