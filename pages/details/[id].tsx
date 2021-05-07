@@ -4,7 +4,8 @@ const movies = Object.entries(data.movies)
 const prefix: string = process.env.NEXT_PUBLIC_BASE_PATH || ''
 import { useRouter } from 'next/router'
 const details = () => {
-    const param: any = useRouter().query
+    const pa: any = useRouter()                                                                     
+    const param: any = pa.query                                        
     const movie: any = movies[param.id || 0][1]
     return (
         <div className={styles.details}>
