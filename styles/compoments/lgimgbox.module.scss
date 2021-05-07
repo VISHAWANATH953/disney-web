@@ -13,7 +13,7 @@
         height: 18rem;
         background:transparent;
         transition: all 250ms ease 0s;
-        border:.3rem solid rgba(249, 249, 249, 0.1);
+        border:.3rem solid #f9f9f91a;
         border-radius: 1.4rem;
             img{
                 width:100%;
@@ -23,7 +23,7 @@
             &:hover{
                 transform: scale(1.05);
                 border-radius: 1.4rem;
-                border-color:rgba(255, 255, 255, 0.897);
+                border-color:#ffffffe5;
             }
     }
 }
