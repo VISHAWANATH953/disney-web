@@ -7,7 +7,7 @@ import { useRouter} from 'next/router'
 const details = () => {
     const pa: any = useRouter()
     const param: any = pa.query
-    const [movie, setmovie] = useState(movies[param.id || 0][1])
+    const movie:any = movies[param.id || 0][1];
     return(
         <div className={styles.details}>
             <img src={movie.backgroundImg} alt={movie.title} className={styles.backImg} />
