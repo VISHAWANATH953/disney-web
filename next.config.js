@@ -3,7 +3,4 @@ module.exports = {
     assetPrefix:process.env.NEXT_PUBLIC_BASE_PATH || '',
     compress: true,
     mode: 'production',
-    future: {
-      webpack5: true,
-    },
   }

@@ -1,13 +1,14 @@
 import styles from "../../styles/pages/datails.module.scss"
 import data from "../../json/moviesData.json"
+import {useState} from "react"
 const movies = Object.entries(data.movies)
 const prefix: string = process.env.NEXT_PUBLIC_BASE_PATH || ''
-import { useRouter } from 'next/router'
+import { useRouter} from 'next/router'
 const details = () => {
     const pa: any = useRouter()
     const param: any = pa.query
-    const movie: any = movies[param.id || 0][1]
-    return (
+    const [movie, setmovie] = useState(movies[param.id || 0][1])
+    return(
         <div className={styles.details}>
             <img src={movie.backgroundImg} alt={movie.title} className={styles.backImg} />
             <div className={styles.img}>
