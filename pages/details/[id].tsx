@@ -1,6 +1,5 @@
 import styles from "../../styles/pages/datails.module.scss"
 import data from "../../json/moviesData.json"
-import {useState} from "react"
 const movies = Object.entries(data.movies)
 const prefix: string = process.env.NEXT_PUBLIC_BASE_PATH || ''
 import { useRouter} from 'next/router'
