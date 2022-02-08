@@ -4,14 +4,12 @@
   justify-content: space-around;
   flex-flow: row wrap;
   width: 100vw;
-  height: 30vh;
   .lgimgbox {
     cursor: pointer;
     overflow: hidden;
     margin: 0.8rem 0;
-    width: 22rem;
+    width: 21rem;
     height: 18rem;
-
     background: transparent;
     transition: all 250ms ease 0s;
     border: 0.3rem solid #f9f9f91a;
@@ -30,7 +28,7 @@
 }
 @media screen and (min-width: 768px) {
   .lgimgbox {
-    width: 28rem;
-    height: 18rem;
+    width: 30rem !important;
+    height: 22.5rem !important;
   }
 }

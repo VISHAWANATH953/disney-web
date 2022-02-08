@@ -10,35 +10,35 @@ const SmImgBox: FC = () => {
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-disney.png"
-        videoSrc="/videos/1564674844-disney.mp4"
+        videoSrc="/videos/disney.mp4"
         alt="disney"
       />
       <SmBox
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-pixar.png"
-        videoSrc="/videos/1564676714-pixar.mp4"
+        videoSrc="/videos/pixar.mp4"
         alt="pixar"
       />
       <SmBox
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-marvel.png"
-        videoSrc="/videos/1564676844-marvel.mp4"
+        videoSrc="/videos/marvel.mp4"
         alt="DC"
       />
       <SmBox
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-starwars.png"
-        videoSrc="/videos/1608229455-star-wars.mp4"
+        videoSrc="/videos/star-wars.mp4"
         alt="star wars"
       />
       <SmBox
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-national.png"
-        videoSrc="/videos/1564676296-national-geographic.mp4"
+        videoSrc="/videos/national-geographic.mp4"
         alt="national geographic"
       />
     </div>

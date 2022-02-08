@@ -11,10 +11,10 @@ interface linkProps {
 const LinkCom: FC<linkProps> = ({ prefix, imgSrc, span, alt }) => {
   return (
     <Link href="/Main">
-      <>
+      <a>
         <img src={prefix + imgSrc} alt={alt} />
         {span && <span>{span}</span>}
-      </>
+      </a>
     </Link>
   );
 };
