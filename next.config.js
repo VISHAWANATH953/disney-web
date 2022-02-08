@@ -1,6 +1,11 @@
-module.exports = {
-    basePath:process.env.NEXT_PUBLIC_BASE_PATH || '',
-    assetPrefix:process.env.NEXT_PUBLIC_BASE_PATH || '',
-    compress: true,
-    mode: 'production',
-  }
+const withPWA = require("next-pwa");
+
+module.exports = withPWA({
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  compress: true,
+  mode: "production",
+  pwa: {
+    dest: "public",
+  },
+});

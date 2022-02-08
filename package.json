@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "latest",
+    "next-pwa": "^5.4.4",
     "react": "latest",
     "react-dom": "latest"
   },

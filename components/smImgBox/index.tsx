@@ -38,7 +38,7 @@ const SmImgBox: FC = () => {
         styles={styles}
         prefix={prefix}
         imgSrc="/images/viewers-national.png"
-        videoSrc="/videos/national-geographic.mp4"
+        videoSrc="/videos/ngo.mp4"
         alt="national geographic"
       />
     </div>
