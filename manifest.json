@@ -3,7 +3,7 @@
   "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/disney-web",
   "name": "Disney Cone",
   "description": "This was disney clone project by vishwanath kokare",
   "short_name": "disney-clone",
