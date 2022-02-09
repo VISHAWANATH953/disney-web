@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { prefix } from "../constants";
 import { FC } from "react";
-import manifest from "../public/manifest.json"
 
 const Header: FC = () => (
   <Head>
