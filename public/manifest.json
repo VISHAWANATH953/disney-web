@@ -1,7 +1,7 @@
 {
   "theme_color": "#010E7D",
   "background_color": "#000000",
-  "display": "standalone",
+  "display": "fullscreen",
   "start_url": "/disney-web/",
   "name": "Disney Cone",
   "description": "This was disney clone project by vishwanath kokare",
