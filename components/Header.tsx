@@ -16,7 +16,7 @@ const Header: FC = () => (
       content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no"
     />
     <meta name="keywords" content="Keywords" />
-    <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+    <link rel="apple-touch-icon" href={`${prefix}/apple-icon.png`}></link>
     <meta name="theme-color" content="#010E7D" />
   </Head>
 );
