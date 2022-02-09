@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { prefix } from "../constants";
 import { FC } from "react";
+import manifest from "../public/manifest.json"
 
 const Header: FC = () => (
   <Head>
@@ -10,7 +11,7 @@ const Header: FC = () => (
       content="This was disney clone project by vishwanath kokare"
     />
     <link rel="icon" href={prefix + "/favicon.ico"} />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href={`${prefix}/manifest.json`} />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=no"

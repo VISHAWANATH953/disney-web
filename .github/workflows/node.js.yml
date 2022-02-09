@@ -22,8 +22,6 @@ jobs:
         NEXT_PUBLIC_BASE_PATH: /disney-web
     - name: Exporting My App 👉
       run: yarn run export
-      env:
-        NEXT_PUBLIC_BASE_PATH: /myownsite
     - name: Adding Nojekyll To APP 🔐
       run: touch ./out/.nojekyll
     - name: Deploy 🚀
