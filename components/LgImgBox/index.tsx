@@ -1,26 +1,25 @@
-import styles from "../../styles/components/lgimgbox.module.scss";
 import movies from "../../json/moviesData.json";
+import styled from "styled-components";
 import LgBox from "./LgBox";
 import { FC } from "react";
 
 const LgImgBox: FC = () => {
   const movie = Object.entries(movies.movies);
   return (
-    <div className={styles.lgbox}>
+    <LgImgBoxs>
       {movie.map((movie, i: number) => {
         let hayData = movie[1].cardImg;
-        return (
-          <LgBox
-            key={i}
-            src={hayData}
-            alt={movie[1].title}
-            i={i}
-            styles={styles}
-          />
-        );
+        return <LgBox key={i} src={hayData} alt={movie[1].title} i={i} />;
       })}
-    </div>
+    </LgImgBoxs>
   );
 };
+
+const LgImgBoxs = styled.div`
+display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100vw;`
 
 export default LgImgBox;

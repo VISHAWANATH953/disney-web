@@ -1,6 +1,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "../../styles/components/imgslider.module.scss";
+import styled from "styled-components";
 import Slider from "react-slick";
 import Slides from "./Slides";
 import { prefix } from "../../constants";
@@ -16,33 +16,41 @@ const ImgSlider: FC = () => {
     autoplay: true,
   };
   return (
-    <Slider {...settings} className={styles.slide}>
+    <SliderCom {...settings}>
+      <Slides prefix={prefix} imgSrc={"/images/slider-badag.jpg"} alt={"hay"} />
       <Slides
         prefix={prefix}
-        styles={styles}
-        imgSrc={"/images/slider-badag.jpg"}
-        alt={"hay"}
-      />
-      <Slides
-        prefix={prefix}
-        styles={styles}
         imgSrc={"/images/slider-badging.jpg"}
         alt={"hay"}
       />
+      <Slides prefix={prefix} imgSrc={"/images/slider-scale.jpg"} alt={"hay"} />
       <Slides
         prefix={prefix}
-        styles={styles}
-        imgSrc={"/images/slider-scale.jpg"}
-        alt={"hay"}
-      />
-      <Slides
-        prefix={prefix}
-        styles={styles}
         imgSrc={"/images/slider-scales.jpg"}
         alt={"hay"}
       />
-    </Slider>
+    </SliderCom>
   );
 };
+
+const SliderCom = styled(Slider)`
+  margin-top: 1.5rem 0;
+  width: 99vw;
+  ul li button::before {
+    color: #f9f9f9;
+    font-size: 1rem;
+  }
+  button {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 96%;
+
+    button {
+      display: block !important;
+    }
+  }
+`;
 
 export default ImgSlider;
