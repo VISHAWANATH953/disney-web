@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -8,7 +8,7 @@ interface boxProps {
   i: number;
 }
 
-const LgBox: FC<boxProps> = ({ src, alt, i }) => {
+const LgBox: React.FC<boxProps> = ({ src, alt, i }) => {
   return (
     <Link href={`/details/${i}`} key={i}>
       <LgBoxes>

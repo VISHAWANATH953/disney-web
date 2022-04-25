@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { prefix } from "../constants";
-import { FC } from "react";
 
-const Header: FC = () => (
+const Header = () => (
   <Head>
     <title>disney clone</title>
     <meta

@@ -1,10 +1,8 @@
-import styles from "../../styles/components/smimgbox.module.scss";
 import SmBox from "./SmBox";
 import { prefix } from "../../constants";
-import { FC } from "react";
 import styled from "styled-components";
 
-const SmImgBox: FC = () => {
+const SmImgBox = () => {
   return (
     <SmBoxCom>
       <SmBox

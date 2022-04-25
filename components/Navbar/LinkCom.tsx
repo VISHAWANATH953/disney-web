@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from 'react'
 import Link from "next/link";
 
 interface linkProps {
@@ -8,7 +8,7 @@ interface linkProps {
   alt: string;
 }
 
-const LinkCom: FC<linkProps> = ({ prefix, imgSrc, span, alt }) => {
+const LinkCom: React.FC<linkProps> = ({ prefix, imgSrc, span, alt }) => {
   return (
     <Link href="/Main">
       <a>

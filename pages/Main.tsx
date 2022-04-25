@@ -1,11 +1,10 @@
-import { FC } from "react";
 import ImgSlider from "../components/imgSlider";
 import SmImgBox from "../components/smImgBox";
 import LgImgBox from "../components/LgImgBox";
 import { prefix } from "../constants";
 import styled from "styled-components";
 
-const Main: FC = () => {
+const Main = () => {
   return (
     <MainCom>
       <MainImg

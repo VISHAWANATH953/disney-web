@@ -5,6 +5,7 @@ module.exports = withPWA({
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
   compress: true,
   mode: "production",
+  swcMinify:true,
   pwa: {
     dest: "public",
   },

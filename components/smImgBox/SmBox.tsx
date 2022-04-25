@@ -1,5 +1,5 @@
-import { FC } from "react";
 import styled from "styled-components";
+import React from 'React'
 
 interface boxProps {
   prefix: string;
@@ -8,7 +8,7 @@ interface boxProps {
   alt: string;
 }
 
-const SmBox: FC<boxProps> = ({ prefix, imgSrc, videoSrc, alt }) => {
+const SmBox:React.FC<boxProps> = ({ prefix, imgSrc, videoSrc, alt }) => {
   return (
     <SmImgBox>
       <img src={prefix + imgSrc} alt={alt} />

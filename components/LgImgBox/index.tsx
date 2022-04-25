@@ -1,9 +1,8 @@
 import movies from "../../json/moviesData.json";
 import styled from "styled-components";
 import LgBox from "./LgBox";
-import { FC } from "react";
 
-const LgImgBox: FC = () => {
+const LgImgBox= () => {
   const movie = Object.entries(movies.movies);
   return (
     <LgImgBoxs>
@@ -14,6 +13,7 @@ const LgImgBox: FC = () => {
     </LgImgBoxs>
   );
 };
+
 
 const LgImgBoxs = styled.div`
 display: flex;

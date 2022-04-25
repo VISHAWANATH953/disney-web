@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from 'react'
 import styled from "styled-components";
 
 interface slideProps {
@@ -7,7 +7,7 @@ interface slideProps {
   prefix: string;
 }
 
-const Slides: FC<slideProps> = ({ prefix, imgSrc, alt }) => {
+const Slides:React.FC<slideProps> = ({ prefix, imgSrc, alt }) => {
   return (
     <Wrap>
       <img src={prefix + imgSrc} alt={alt} />

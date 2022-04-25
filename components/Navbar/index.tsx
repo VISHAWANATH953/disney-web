@@ -1,9 +1,8 @@
 import LinkCom from "./LinkCom";
 import { prefix } from "../../constants";
-import { FC } from "react";
 import styled from "styled-components";
 
-const Navbar: FC = () => {
+const Navbar = () => {
   return (
     <Nav>
       <Head>

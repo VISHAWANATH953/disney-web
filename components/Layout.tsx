@@ -1,7 +1,8 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
+import React  from "react";
 
-const Layout = ({ children }: any) => {
+const Layout = ({ children }:any) => {
   return (
     <>
       <Header />

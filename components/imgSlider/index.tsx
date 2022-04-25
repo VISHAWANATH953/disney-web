@@ -4,9 +4,9 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import Slides from "./Slides";
 import { prefix } from "../../constants";
-import { FC } from "react";
+import React from 'react'
 
-const ImgSlider: FC = () => {
+const ImgSlider: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,

@@ -1,15 +1,8 @@
-import styles from "../../styles/pages/datails.module.scss";
 import data from "../../json/moviesData.json";
 import { prefix } from "../../constants";
-const movies = Object.entries(data.movies);
-import { useRouter } from "next/router";
-import { FC } from "react";
 import styled from "styled-components";
 
-const details: FC = () => {
-  const pa: any = useRouter();
-  const param: any = pa.query;
-  const movie: any = movies[param.id || 0][1];
+const details = ({movie}:any) => {
   return (
     <Detail>
       <BackImg src={movie.backgroundImg} alt={movie.title} />
@@ -41,6 +34,18 @@ const details: FC = () => {
     </Detail>
   );
 };
+
+export const getServerSideProps = async (pageContext:any)=>{
+
+const movies = await Object.entries(data.movies);
+  const param: any = pageContext.query.id;
+  const movie: any = movies[param || 0][1];
+  return{
+    props:{
+    movie
+    }
+  }
+}
 
 const Detail = styled.div`
   position: relative;
