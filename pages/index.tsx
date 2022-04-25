@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { prefix } from "../constants";
 import Link from "next/link";
-import { FC } from "react";
 
-const Home: FC = () => {
+const Home = () => {
   return (
     <HomeCom>
       <InImg
