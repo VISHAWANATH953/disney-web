@@ -6,6 +6,7 @@ module.exports = withPWA({
   compress: true,
   mode: "production",
   swcMinify:true,
+styledComponents: true,
   pwa: {
     dest: "public",
   },
