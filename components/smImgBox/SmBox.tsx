@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from 'React'
+import React from 'react'
 
 interface boxProps {
   prefix: string;
