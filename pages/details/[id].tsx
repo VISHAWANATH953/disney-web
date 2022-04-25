@@ -1,8 +1,13 @@
 import data from "../../json/moviesData.json";
 import { prefix } from "../../constants";
 import styled from "styled-components";
+import {useRouter} from 'next/router'
 
-const details = ({movie}:any) => {
+const details = () => {
+  const movies = Object.entries(data.movies);
+  const param: any = useRouter();
+  const movie: any = movies[param.query.id || 0][1];
+
   return (
     <Detail>
       <BackImg src={movie.backgroundImg} alt={movie.title} />
@@ -34,18 +39,6 @@ const details = ({movie}:any) => {
     </Detail>
   );
 };
-
-export const getServerSideProps = async (pageContext:any)=>{
-
-const movies = await Object.entries(data.movies);
-  const param: any = pageContext.query.id;
-  const movie: any = movies[param || 0][1];
-  return{
-    props:{
-    movie
-    }
-  }
-}
 
 const Detail = styled.div`
   position: relative;
